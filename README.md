@@ -1,6 +1,9 @@
-# Sistema para tomar pedidos en expendio de comidas rápidas.
+# 🚀 Sistema de Gestión de Pedidos - Sancho Plancha
+Simple, rápido y personalizado, para tomar pedidos en un FoodTruck llamado Sancho Plancha.
 
-Sistema simple, rápido y personalizado para tomar pedidos en un FoodTruck llamado Sancho Plancha.
+💡 El proyecto sigue en evolución: Vienen nuevas funciones, mejoras y optimizaciones.
+
+🔍 ¿Curioso por los avances? [¡Probá y explorá el proyecto!](https://calculadora-de-pedidos.vercel.app/) 🚀✨
 
 ### Flujo de Trabajo
 
