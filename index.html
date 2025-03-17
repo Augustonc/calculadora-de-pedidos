@@ -11,46 +11,37 @@
 <body>
     <!-- CONTENEDOR PRINCIPAL DE TODOS LOS ELEMENTOS DEL BODY -->
     <div class="container">
-        <!-- COMIENZA EL SUB CONTENEDOR 1 -->
         <div class="sub-container-1">
-
-            <h1>PEDIDOS</h1>
-
-            <!-- Campo para el nombre del cliente -->
-            <div class="customer-info">
-                <input type="text" id="customer-name" placeholder="Nombre del cliente">
-            </div>
-
+            <h1>Realizar Pedido</h1>
             <!-- Menú de productos -->
             <div class="menu">
+                <!-- Campo para el nombre del cliente -->
+                <div class="customer-info">
+                    <input type="text" id="customer-name" placeholder="Nombre del cliente">
+                </div>
                 <!-- Los productos se generan dinámicamente con JavaScript -->
             </div>
 
         </div>
 
-        <!-- COMIENZA EL SUB CONTENEDOR 2 -->
-        <div class="sub-container-2">
-            <!-- Resumen del pedido -->
-            <div class="order-summary">
-                <h2>Pedidos Pendientes</h2>
-                <div id="order-counts"></div>
-                <ul id="order-list"></ul>
-            </div>
-
-            <!-- Botones para cambios de pantalla -->
-            <div class="action-buttons">
-                <button id="make-order-btn">Hacer Pedido</button>
-                <button id="view-orders-btn">Ver Pedidos</button>
-            </div>
-
-            <!-- Segunda Pestaña de "Pedidos Terminados-Realizados" -->
-            <div id="orders-section" class="hidden">
-                <h2>Pedidos Realizados</h2>
-                <ul id="completed-orders-list"></ul>
-            </div>
-
+        <!-- Resumen del pedido -->
+        <div class="order-summary">
+            <h1>Pedidos Pendientes</h1>
+            <div id="order-counts"></div>
+            <ul id="order-list"></ul>
         </div>
 
+        <!-- Botones para cambios de pantalla -->
+        <div class="action-buttons">
+            <button id="make-order-btn">Hacer Pedido</button>
+            <button id="view-orders-btn">Ver Pedidos</button>
+        </div>
+
+        <!-- Segunda Pestaña de "Pedidos Terminados-Realizados" -->
+        <div id="orders-section" class="hidden">
+            <h2>Pedidos Realizados</h2>
+            <ul id="completed-orders-list"></ul>
+        </div>
     </div>
 
     <!-- Script para manejar la lógica -->

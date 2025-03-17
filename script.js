@@ -147,6 +147,7 @@ document.getElementById('make-order-btn').onclick = () => {
     document.querySelector('.order-summary').classList.remove('hidden'); // Muestra pedidos actuales
     document.querySelector('.customer-info').classList.remove('hidden'); // Muestra el campo de nombre
     document.querySelector('.menu').classList.remove('hidden'); // Muestra el menú
+    document.querySelector('.sub-container-1').classList.remove('hidden');
 };
 
 document.getElementById('view-orders-btn').onclick = () => {
@@ -154,6 +155,7 @@ document.getElementById('view-orders-btn').onclick = () => {
     document.querySelector('.order-summary').classList.add('hidden'); // Oculta pedidos actuales
     document.querySelector('.customer-info').classList.add('hidden'); // Oculta el campo de nombre
     document.querySelector('.menu').classList.add('hidden'); // Oculta el menú
+    document.querySelector('.sub-container-1').classList.add('hidden');
 };
 
 // Mover pedidos a "Pedidos Realizados"
