@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos Food Truck</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos Food Truck</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <!-- CONTENEDOR PRINCIPAL DE TODOS LOS ELEMENTOS DEL BODY -->
-    <div class="container">
-        <div class="sub-container-1">
-            <h1>Realizar Pedido</h1>
-            <!-- Menú de productos -->
-            <div class="menu">
-                <!-- Campo para el nombre del cliente -->
-                <div class="customer-info">
-                    <input type="text" id="customer-name" placeholder="Nombre del cliente">
+    <body>
+        <!-- container -> CONTENEDOR PRINCIPAL DE TODOS LOS ELEMENTOS DEL BODY -->
+        <div class="container">
+            <!-- sub-container-1 = Lo creé para encerrar al título principal y el menú, para que ambos
+                estén en un mismo recuadro, graficamente hablando -->
+            <div class="sub-container-1">
+                <h1>Realizar Pedido</h1>
+                <!-- Menú de productos -->
+                <div class="menu">
+                    <!-- Campo para el nombre del cliente -->
+                    <div class="customer-info">
+                        <input type="text" id="customer-name" placeholder="Nombre del cliente">
+                    </div>
+                    <!-- Los productos se generan dinámicamente con JavaScript -->
                 </div>
-                <!-- Los productos se generan dinámicamente con JavaScript -->
             </div>
 
+            <!-- Resumen del pedido -->
+            <div class="order-summary">
+                <h1>Pedidos Pendientes</h1>
+                <div id="order-counts"></div>
+                <ul id="order-list"></ul>
+            </div>
+
+            <!-- Botones para cambios de pantalla -->
+            <div class="action-buttons">
+                <button id="make-order-btn">Hacer Pedido</button>
+                <button id="view-orders-btn">Ver Pedidos</button>
+            </div>
+
+            <!-- Segunda Pestaña de "Pedidos Terminados-Realizados" -->
+            <div id="orders-section" class="hidden">
+                <h2>Pedidos Realizados</h2>
+                <ul id="completed-orders-list"></ul>
+            </div>
         </div>
 
-        <!-- Resumen del pedido -->
-        <div class="order-summary">
-            <h1>Pedidos Pendientes</h1>
-            <div id="order-counts"></div>
-            <ul id="order-list"></ul>
-        </div>
-
-        <!-- Botones para cambios de pantalla -->
-        <div class="action-buttons">
-            <button id="make-order-btn">Hacer Pedido</button>
-            <button id="view-orders-btn">Ver Pedidos</button>
-        </div>
-
-        <!-- Segunda Pestaña de "Pedidos Terminados-Realizados" -->
-        <div id="orders-section" class="hidden">
-            <h2>Pedidos Realizados</h2>
-            <ul id="completed-orders-list"></ul>
-        </div>
-    </div>
-
-    <!-- Script para manejar la lógica -->
-    <script src="script.js"></script>
-</body>
+        <!-- Script para manejar la lógica -->
+        <script src="script.js"></script>
+    </body>
 
 </html>
